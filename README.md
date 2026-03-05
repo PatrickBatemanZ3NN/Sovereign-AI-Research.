@@ -8,7 +8,7 @@ The Vision
 To create a specialized expert system that is compact, lightning-fast, and hallucination-free. I don't need a massive cluster; I need a surgical tool with ultra-low RAM consumption and maximum inference throughput.
 The Architecture
 SLM (Small Language Models): I use hyper-compact models instead of bloated, inefficient LLMs.
-RAG / KAG (Knowledge-Augmented Generation): Instead of relying on generic training, I feed the model structured data from verified sources. From stock market dictionaries and algebra to Boyle’s Law or even specialized niche data like shrimp farming. If the source is reliable, the reasoning is flawless.
+RAG / KAG (Knowledge-Augmented Generation): Instead of relying on generic training, I feed the model structured data from verified sources. 
 
 Why On-Device?
 Sovereignty: You control the knowledge. No "censorship," no corporate bias.
@@ -25,7 +25,9 @@ Attached is the model running in real-time. Try to keep up with the pace—if yo
 
 
 
-https://github.com/user-attachments/assets/78f960c3-9bd4-4e42-8339-a5fd4186fd1f
+https://github.com/user-attachments/assets/7b116ada-c5ea-4283-81f9-af42d255d666
+
+
 
 
 
