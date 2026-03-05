@@ -24,7 +24,11 @@ Video Demo
 Attached is the model running in real-time. Try to keep up with the pace—if you can (well, if you speak Spanish too).
 
 
-https://github.com/user-attachments/assets/c50cf0be-2a03-488b-95ea-7204aa7f4abc
+
+https://github.com/user-attachments/assets/78f960c3-9bd4-4e42-8339-a5fd4186fd1f
+
+
+
 
 Attention Apple Silicon Engineering & MLX Teams:
 This implementation demonstrates the untapped potential of Unified Memory Architecture and L1/L2 cache efficiency in M-series chips. While the industry is obsessed with cloud-scale H100s, I am proving that M1/M2/M3/M4 hardware is the superior platform for Sovereign Intelligence. I am achieving these 4,000+ t/s results through pure algorithmic efficiency and memory management, even before touching the Neural Engine (ANE). This is why the Mac is the ultimate AI workstation.
