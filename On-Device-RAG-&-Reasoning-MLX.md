@@ -64,3 +64,4 @@ Memory: 2.282 GB | INFERENCE TIME: 8.03s
 
 This represents the first step in validating the minimum parameter threshold required to guarantee technical veracity on local devices. Future testing remains to determine if even smaller models can maintain this logical integrity without sacrificing reasoning coherence.
 
+Labeling thousands of entries in a RAG is a Herculean task. However, a model with reasoning capabilities can mitigate the flaws of mediocre data.
