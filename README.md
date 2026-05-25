@@ -1,36 +1,29 @@
-# Sovereign-AI-Research.
-Local AI at 4,000+ t/s: Rethinking inference with SLMs and 0.6GB RAM. High-fidelity intelligence without the 'Big Tech Tax' or cloud dependencies.
+BacterAE-Knowledge-Transfer-Protocol
+The Mission: Moving Beyond "Vague Tutorials"
+This project is an exercise in Open Knowledge. I found that most AI tutorials are fundamentally incomplete: they discuss concepts without providing the specific datasets, model weights, precise training parameters, or the reasoning behind the data structure.
+The goal of this repository is not just to "train a model." The goal is to provide a fully reproducible protocol for taking an LLM from zero knowledge to domain expertise.
+Why Bacter AE?
+I run a shrimp aquarium as a side project. When I queried my base model about "Bacter AE," it had absolutely no idea what the product was, what it was used for, or how to dose it safely.
+This made it the perfect test subject: a "Tabula Rasa" (Blank Slate) problem.
+• The Journey: We move from absolute ignorance to technical proficiency.
+• The Methodology: I am documenting the entire path—from the raw dataset structure and line length specifications to the exact LoRA training parameters and final loss curves.
+Transparency Standards
+To ensure this research is useful to the community, every experiment in this repo includes:
+1. The Dataset: Raw .jsonl files specifying the exact number of lines and complexity used.
+2. Hyperparameters: Full disclosure of LoRA rank, alpha, learning rates, and gradient accumulation steps.
+3. Reproducibility: Scripts (train_all_small.sh) that allow anyone to replicate the training on their own hardware.
+4. Weights: Links to download the resulting model weights so the community can audit the "expertise" acquired.
+The Open Knowledge Manifesto
+If you want to train a model to know something specific, you shouldn't have to guess how others did it. By sharing the dataset, the parameters, and the results, we turn "AI training" from a dark art into a transparent engineering process.
+Project Structure
+• dataset_X/: Contains the Chain-of-Thought (CoT) datasets, categorized by line count.
+• train_X.sh: Individual scripts documenting the specific parameters for each experiment.
+• logs/: Empirical results showing the convergence (loss curves) of the model.
+• weights/: Download links for the final fine-tuned adapters.
+This repository is dedicated to those who prefer data over hype.
 
-On-Device Sovereignty: 4,000+ t/s AI with 0.6GB RAM
+Why the gemma-4-e2b-it-4bit model?
+I have chosen the gemma-4-e2b-it-4bit model because it is a current model that features a Mixture of Experts (MoE) architecture and built-in chain-of-thought reasoning. The 4-bit compression makes it significantly more compact and accessible, allowing more people to train this model on their own home hardware. My objective is to enable others to experiment locally, avoiding the need to pay for dedicated servers for large-scale training unless they decide to scale up in the future.
+I am not an amateur in Machine Learning—quite the contrary. I do not intend to provide a masterclass; I am simply documenting a process. I am sharing this workflow so that others can achieve what I am doing without having to rely on vague tutorials that say nothing and provide no real value. I am tired of that kind of content, and this project is the antithesis of it.
 
-I am building a local AI ecosystem. No internet, no latency, no data leaks. This isn't GPT, Claude, or Gemini—this is On-Device Intelligence at its peak.
-The Vision
-To create a specialized expert system that is compact, lightning-fast, and hallucination-free. I don't need a massive cluster; I need a surgical tool with ultra-low RAM consumption and maximum inference throughput.
-The Architecture
-SLM (Small Language Models): I use hyper-compact models instead of bloated, inefficient LLMs.
-RAG / KAG (Knowledge-Augmented Generation): Instead of relying on generic training, I feed the model structured data from verified sources. 
-
-Why On-Device?
-Sovereignty: You control the knowledge. No "censorship," no corporate bias.
-Data Signal over Noise: I discard the Wikipedia "fluff" and keep only high-value, expert-level data for specific domains (Financials, IBKR, Technical Analysis, etc.).
-Privacy: What happens on my Mac, stays on my Mac.
-Performance Benchmarks (M1 Silicon)
-Prompt Processing: 4,000+ tokens/second.
-Text Generation: 110 tokens/second.
-Memory Footprint: 0.6 GB RAM.
-Technical Note
-Currently running on Python. It is not yet optimized for the Apple Neural Engine (ANE) via MLX or Swift. Once ported, the performance jump on M-series architecture (M4/M5) will be massive.
-Video Demo
-Attached is the model running in real-time. Try to keep up with the pace—if you can (well, if you speak Spanish too).
-
-
-
-https://github.com/user-attachments/assets/7b116ada-c5ea-4283-81f9-af42d255d666
-
-
-
-
-
-
-Attention Apple Silicon Engineering & MLX Teams:
-This implementation demonstrates the untapped potential of Unified Memory Architecture and L1/L2 cache efficiency in M-series chips. While the industry is obsessed with cloud-scale H100s, I am proving that M1/M2/M3/M4 hardware is the superior platform for Sovereign Intelligence. I am achieving these 4,000+ t/s results through pure algorithmic efficiency and memory management, even before touching the Neural Engine (ANE). This is why the Mac is the ultimate AI workstation.
+This is an ongoing, iterative process. Training a model is time-consuming, and I am not training just once; I am running the same experiment multiple times to gather and share comprehensive results.
